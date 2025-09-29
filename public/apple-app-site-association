@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "BMZ7P4N2P.com.crowd.prod",
+        "paths": [ "/*" ]
+      }
+    ]
+  }
+}
