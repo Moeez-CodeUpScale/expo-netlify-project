@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.codeupscale.crowdvip",
+    "sha256_cert_fingerprints": ["57:B1:67:BC:4E:BC:99:0D:2D:29:E0:07:AB:DF:3D:F7:E7:C7:87:AF:51:CF:22:8E:1D:83:92:52:71:F6:15:F7"]
+  }
+}]
