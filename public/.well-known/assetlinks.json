@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.codeupscale.crowdvip",
+      "sha256_cert_fingerprints": [
+        "C0:74:50:06:7C:0F:A4:02:F1:8A:30:9A:E8:DB:B6:49:CF:38:19:7D:DF:3D:A8:E3:E9:D2:D1:36:28:54:21:F9"
+      ]
+    }
+  }
+]
