@@ -5,11 +5,24 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Force serve assetlinks.json as static file
+[[redirects]]
+  from = "/.well-known/assetlinks.json"
+  to = "/.well-known/assetlinks.json"
+  status = 200
+  force = true
+
+# SPA redirect for all other routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  conditions = {path = "!/.well-known/*"}
+
+[[headers]]
+  for = "/.well-known/assetlinks.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Cache-Control = "public, max-age=3600"
 
 [[headers]]
   for = "/*"

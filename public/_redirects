@@ -1,5 +1,5 @@
-# Serve static files in .well-known directory as-is
-/.well-known/* 200
+# Explicitly serve assetlinks.json - no redirect
+/.well-known/assetlinks.json /.well-known/assetlinks.json 200!
 
 # Redirect all other routes to index.html for SPA
 /* /index.html 200
