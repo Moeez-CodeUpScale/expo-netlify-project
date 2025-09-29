@@ -1,8 +1,5 @@
-# Primary assetlinks.json location
+# Serve assetlinks.json as static file - highest priority
 /.well-known/assetlinks.json /.well-known/assetlinks.json 200!
 
-# Fallback for assetlinks.json
-/.well-known/assetlinks.json /assetlinks.json 200
-
-# Redirect all other routes to index.html for SPA
+# All other routes go to React app for SPA routing
 /* /index.html 200

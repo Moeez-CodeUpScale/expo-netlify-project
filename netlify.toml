@@ -5,14 +5,14 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Force serve assetlinks.json as static file
+# High priority rule for assetlinks.json
 [[redirects]]
   from = "/.well-known/assetlinks.json"
   to = "/.well-known/assetlinks.json"
   status = 200
   force = true
 
-# SPA redirect for all other routes
+# SPA fallback for all other routes
 [[redirects]]
   from = "/*"
   to = "/index.html"
@@ -30,13 +30,3 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-
-[[headers]]
-  for = "/*.js"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000"
-
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000"
