@@ -1,5 +1,5 @@
-# Serve assetlinks.json as static file - highest priority
-/.well-known/assetlinks.json /.well-known/assetlinks.json 200!
+# Serve assetlinks.json from public directory
+/.well-known/assetlinks.json /android-assetlinks.json 200
 
 # All other routes go to React app for SPA routing
 /* /index.html 200
